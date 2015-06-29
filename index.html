@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Array Methods</title>
+	<script>
+	var units =[{name: "Ernie", GBRAM: 1024, GBHD: 512000}, {name: "Bert", GBRAM: 2048, GBHD: 512000}, {name: "Kermit", GBRAM: 3072, GBHD: 512000}];
+	var checkMem = function(u){
+		return u.GBRAM > 1024;
+	}
+	console.log("Employees PC Units Inventory");
+	units.forEach(function(p){console.log(p.name)})
+	console.log("All Units having more than 1 GB RAM",units.every(checkMem));
+	console.log("Some Units having more than 1 GB RAM",units.some(checkMem));
+	</script>
+  </head>
+  <body>
+    <h1>Every vs. Some</h1>
+  </body>
+</html>
